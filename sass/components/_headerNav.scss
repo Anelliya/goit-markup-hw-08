@@ -1,0 +1,143 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+
+  &-wrapper {
+    @media screen and (max-width: 767px) {
+      z-index: 100;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      display: none;
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+      &.is-open {
+        display: block;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+}
+
+.navigation-list {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 82px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 300px;
+  }
+
+  .activ-link-color::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+
+    background-color: $color-accent;
+    border-radius: 2px;
+  }
+}
+
+.navigation-item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    .mobi-size-studio {
+      width: 66px;
+      height: 33px;
+    }
+
+    .mobi-size-portfolio {
+      width: 99px;
+      height: 33px;
+    }
+
+    .mobi-size-contacts {
+      width: 87px;
+      height: 33px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .link {
+    transition: color 250ms linear;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $color-text-darkgrey;
+
+    @media screen and (max-width: 767px) {
+      margin: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: $font-size-main;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .activ-link-color {
+    position: relative;
+    color: $color-accent;
+  }
+}
+
+.navigation-list .link:hover,
+.navigation-list .link:focus {
+  color: $color-accent;
+}
+
+.mobile-button {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .close-icon {
+    display: none;
+  }
+}
+
+.mobile-button.is-open .close-icon {
+  display: block;
+}
+
+.mobile-button.is-open .menu-icon {
+  display: none;
+}

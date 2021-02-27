@@ -1,0 +1,71 @@
+.footer {
+  .logo {
+    margin-bottom : 20px;
+    font-family   : $font-logo;
+    font-weight   : bold;
+    font-size     : 24px;
+    line-height   : 1.17;
+    letter-spacing: 0.03em;
+    color         : $color-accent;
+
+    @media screen and (min-width: 1200px) {
+      font-size  : 26px;
+      line-height: 1.19;
+    }
+
+    &>span {
+      color: $color-text-white;
+    }
+  }
+
+  .adress {
+    margin-bottom : 8px;
+    font-size     : $font-size-main;
+    line-height   : 1.71;
+    letter-spacing: 0.03em;
+    color         : $color-text-white;
+    font-style    : normal;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 9px;
+    }
+  }
+
+  .contacts {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width           : 370px;
+      margin-right    : 70px;
+      margin-bottom   : 0;
+      // padding      : 60px 0;
+    }
+
+    &-item {
+      font-size     : $font-size-main;
+      line-height   : 1.17;
+      letter-spacing: 0.03em;
+      color         : rgba(255, 255, 255, 0.6);
+      transition    : color 250ms linear;
+      font-style    : normal;
+    }
+
+    &-item:hover,
+    &-item:focus {
+      color: $color-accent;
+    }
+
+    .mail {
+      margin-bottom: 8px;
+      font-style   : normal;
+
+      @media screen and (min-width: 768px) {
+        padding-bottom: 9px;
+      }
+    }
+  }
+}

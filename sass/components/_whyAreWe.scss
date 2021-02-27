@@ -1,0 +1,72 @@
+.why-are-we {
+  padding: 60px 0;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+  // width: calc(100% - 30px / 2);
+
+  &-list {
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      &:not(:last-child) {
+        margin-right: $margin-right;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      width: 270px;
+    }
+
+    .description {
+      font-size: $font-size-main;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $color-text-grey;
+    }
+  }
+
+  .reason-item {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: $font-size-main;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-text-darkgrey;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      margin-bottom: $margin-right;
+      width: 100%;
+      height: 120px;
+      background: $color-background-first;
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 70px 70px;
+    }
+  }
+
+  .first-reason-img::before {
+    background-image: url(../images/why_we/satellite.svg);
+  }
+
+  .second-reason-img::before {
+    background-image: url(../images/why_we/clock1.svg);
+  }
+
+  .third-reason-img::before {
+    background-image: url(../images/why_we/diagram1.svg);
+  }
+
+  .forth-reason-img::before {
+    background-image: url(../images/why_we/astronaut1.svg);
+  }
+}

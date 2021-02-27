@@ -1,0 +1,81 @@
+.portfolio {
+  .filter {
+    display          : flex;
+    flex-wrap        : wrap;
+    // padding-top   : 60px;
+    margin-bottom    : 40px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      margin-bottom  : 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      // padding-top: 94px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.portfolio-filter-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+
+  .all {
+    width: 73px;
+  }
+
+  .app {
+    width: 145px;
+  }
+
+  .web-sites {
+    width: 128px;
+  }
+
+  .design {
+    width: 103px;
+  }
+
+  .marketing {
+    width: 130px;
+  }
+}
+
+.filter-list {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  height         : 38px;
+  background     : $color-background-first;
+  border-radius  : 4px;
+  border         : none;
+
+  // &:hover {
+  //   transition: background-color 250ms linear;
+  // }
+}
+
+
+
+.portfolio .link {
+  font-weight     : 500;
+  font-size       : $font-size-second;
+  line-height     : 1.63;
+  letter-spacing  : 0.03em;
+  color           : $color-text-darkgrey;
+  background-color: $color-background-first;
+}
+
+.portfolio .link:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition      : 1s;
+  color           : $color-text-white;
+  background-color: $color-accent;
+}

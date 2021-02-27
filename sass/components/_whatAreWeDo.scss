@@ -1,0 +1,42 @@
+.what-are-we-do {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-bottom: $padding-bottom-container;
+  font-weight: bold;
+  font-size: $font-size-main;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-text-white;
+
+  .header {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.03em;
+    color: $color-text-darkgrey;
+    border: none;
+  }
+
+  .item {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  &-list {
+    position: relative;
+    width: 370px;
+
+    &:not(:last-child) {
+      margin-right: $margin-right;
+    }
+  }
+}
