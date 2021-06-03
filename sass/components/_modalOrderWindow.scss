@@ -2,6 +2,7 @@
   visibility    : hidden;
   opacity       : 0;
   pointer-events: none;
+  
 }
 
 .order-modal-blackdrop {
@@ -12,8 +13,11 @@
   height          : 100%;
   background-color: rgba(0, 0, 0, 0.2);
   overflow-y      : scroll;
+  transition: 1s;
 
   .order-modal-window {
+    width: calc(100% - 30px);
+    position: relative;
     padding         : 40px;
     position        : absolute;
     max-width       : 528px;
@@ -27,6 +31,11 @@
     border-radius : 4px;
     display       : flex;
     flex-direction: column;
+
+     @media screen and (max-width: 767px) {
+       margin-top: 94px;
+ }
+    
 
     .close-icon {
       position        : absolute;

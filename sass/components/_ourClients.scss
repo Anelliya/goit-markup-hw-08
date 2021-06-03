@@ -25,6 +25,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      padding-right:15px;
+      padding-left: 15px;
+    }
   }
 
   &-list {
@@ -38,6 +43,11 @@
     }
     &:nth-child(2n + 1) {
       margin-right: $margin-right;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: calc((100% - 30px)/2);
+      
     }
 
     @media screen and (min-width: 768px) {

@@ -2,6 +2,8 @@
   .filter {
     display          : flex;
     flex-wrap        : wrap;
+    padding-right: 15px;
+    padding-left: 15px;
     // padding-top   : 60px;
     margin-bottom    : 40px;
 
@@ -22,7 +24,7 @@
     margin-right: 8px;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
 
