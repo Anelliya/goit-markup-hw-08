@@ -1452,7 +1452,7 @@ button {
   transition: box- 250ms linear;
 }
 
-.project-list-element :hover {
+.project-list-element:hover {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -1491,6 +1491,7 @@ button {
 }
 
 .project-list-element-item {
+  width: 100%;
   padding: 20px 25px;
 }
 
